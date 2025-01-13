@@ -11,7 +11,7 @@ from collections import deque
 
 class ProjectAgent:
     def __init__(self, vec_normalize_path="src/vec_normalize.pkl", stack_size=4):
-        self.model = PPO.load("src/ppo_hiv_stacked")
+        self.model = PPO.load("src/ppo_hiv_normalized")
         self.vec_normalize_path = vec_normalize_path
         self.obs_rms = None
         self.stack_size = stack_size
